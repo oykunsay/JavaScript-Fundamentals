@@ -45,3 +45,24 @@ const bill = (products, tax) => {
 };
 
 console.log(bill([10,15,30], 0.2));
+
+//methods
+const name = 'shaun';
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
+
+//callbacks & foreach
+
+const ul = document.querySelector('.people');
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+let html = ``;
+const logPerson = (person, index) => {
+    console.log(`${index} - hello ${person}`);
+};
+
+people.forEach(logPerson);
+people.forEach(function(person){
+    html += `<li style="color: purple">${person}</li>`;
+});
+console.log(html);
+ul.innerHTML = html;
