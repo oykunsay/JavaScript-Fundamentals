@@ -33,3 +33,22 @@ paraNew.innerText = 'ninjas are awesome';
 const content = document.querySelector('.content');
 console.log(content.innerHTML);
 content.innerHTML += '<h2> THIS IS A NEW H2</h2>';
+
+const people = ['mario', 'sasha', 'yoshi'];
+
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`;
+});
+
+const link = document.querySelector('a');
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://thenetninja.co.uk');
+link.innerText = 'The Net Ninja Website';
+
+const msg = document.querySelector('p');
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color: green;');
+
+const titleNew = document.querySelector('h1');
+titleNew.setAttribute('style', 'margin: 50px');
